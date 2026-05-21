@@ -25,6 +25,7 @@ npx skills add nateslabach/skills --skill <skill-name>
 | [css-reset](./skills/css-reset) | Modern CSS reset covering box-sizing, text rendering, media defaults, and root stacking context |
 | [code-review](./skills/code-review) | Structured 3-phase code review — intent, issues by severity, and adversarial stress-testing |
 | [react-component](./skills/react-component) | Generates self-contained React/TypeScript components with Tailwind, accessibility, and no placeholders |
+| [human-writing](./skills/human-writing) | Strips AI fingerprints from text — banned vocabulary, forbidden sentence structures, authentic prose |
 
 ## Compatibility
 
