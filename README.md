@@ -22,6 +22,9 @@ npx skills add nateslabach/skills --skill <skill-name>
 | [response-discipline](./skills/response-discipline) | Cuts padding and leads with what matters — Parkinson's Law, Pareto, and Goodhart's Law applied to agent output |
 | [engineering-judgment](./skills/engineering-judgment) | Reasoning heuristics for technical decisions — Chesterton's Fence, Occam's Razor, Peter Principle, and Dunning-Kruger |
 | [vibe-audit](./skills/vibe-audit) | 20-point code quality audit for codebases that were shipped fast and need hardening |
+| [css-reset](./skills/css-reset) | Modern CSS reset covering box-sizing, text rendering, media defaults, and root stacking context |
+| [code-review](./skills/code-review) | Structured 3-phase code review — intent, issues by severity, and adversarial stress-testing |
+| [react-component](./skills/react-component) | Generates self-contained React/TypeScript components with Tailwind, accessibility, and no placeholders |
 
 ## Compatibility
 
