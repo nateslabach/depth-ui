@@ -21,6 +21,7 @@ npx skills add nateslabach/skills --skill <skill-name>
 | [prisma](./skills/prisma) | TypeScript and Prisma ORM best practices for schema design, type-safe queries, migrations, and error handling |
 | [response-discipline](./skills/response-discipline) | Cuts padding and leads with what matters — Parkinson's Law, Pareto, and Goodhart's Law applied to agent output |
 | [engineering-judgment](./skills/engineering-judgment) | Reasoning heuristics for technical decisions — Chesterton's Fence, Occam's Razor, Peter Principle, and Dunning-Kruger |
+| [vibe-audit](./skills/vibe-audit) | 20-point code quality audit for codebases that were shipped fast and need hardening |
 
 ## Compatibility
 
