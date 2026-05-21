@@ -1,36 +1,30 @@
-# depth-ui
+# nateslabach/skills
 
-An agent skill for applying depth-driven layered color and shadow principles to produce polished, readable UIs in both light and dark themes.
+Agent skills for AI coding assistants.
 
 ## Install
 
 ```bash
-npx skills add https://github.com/nateslabach/depth-ui --skill depth-ui
+# Install all skills
+npx skills add nateslabach/skills
+
+# Install a specific skill
+npx skills add nateslabach/skills --skill <skill-name>
 ```
 
-## What it does
+## Skills
 
-Teaches your agent to improve UI quality by:
+| Skill | Description |
+|---|---|
+| [depth-ui](./skills/depth-ui) | Layered color + shadow principles for polished UIs in light and dark themes |
+| [pushback](./skills/pushback) | Stress-tests ideas by surfacing assumptions, counterarguments, and confidence gaps |
+| [prisma](./skills/prisma) | TypeScript and Prisma ORM best practices for schema design, type-safe queries, migrations, and error handling |
+| [response-discipline](./skills/response-discipline) | Cuts padding and leads with what matters — Parkinson's Law, Pareto, and Goodhart's Law applied to agent output |
+| [engineering-judgment](./skills/engineering-judgment) | Reasoning heuristics for technical decisions — Chesterton's Fence, Occam's Razor, Peter Principle, and Dunning-Kruger |
 
-- Building a 3–4 layer color hierarchy (base → mid → top) using small OKLCH lightness deltas
-- Composing two-part shadows: a soft inset top highlight + a darker outer bottom shadow
-- Setting up token-based theming with light/dark parity
-- Knowing when to elevate, when to sink, and when to leave things flat
-- Maintaining WCAG AA contrast through layering changes
+## Compatibility
 
-## When to use
-
-- Reviewing or improving a UI component or page
-- Setting up a design token system from scratch
-- Making a flat or inconsistent UI feel more refined without a full redesign
-- Auditing depth and shadow consistency across a design system
-
-## Structure
-
-```
-depth-ui/
-└── SKILL.md
-```
+Works with Claude Code, Cursor, Codex, GitHub Copilot, Windsurf, Gemini CLI, Cline, and all agents that support the [skills CLI](https://github.com/vercel-labs/skills).
 
 ## License
 
