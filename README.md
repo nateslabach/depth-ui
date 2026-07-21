@@ -19,7 +19,13 @@ npx skills add nateslabach/skills --skill <skill-name>
 | [brutal-truth](./skills/brutal-truth) | Disables diplomatic padding for cold, unfiltered, consequentialist analysis on any topic | Reasoning |
 | [pushback](./skills/pushback) | Stress-tests ideas by surfacing assumptions, counterarguments, and confidence gaps | Reasoning |
 | [engineering-judgment](./skills/engineering-judgment) | Reasoning heuristics for technical decisions: Chesterton's Fence, Occam's Razor, Peter Principle, and Dunning-Kruger | Reasoning |
-| [response-discipline](./skills/response-discipline) | Cuts padding and leads with what matters: Parkinson's Law, Pareto, and Goodhart's Law applied to agent output | Reasoning |
+| [shut-up-and-drive](./skills/shut-up-and-drive) | Cuts fluff and leads with what matters: Parkinson's, Pareto, and Goodhart applied to agent output | Reasoning |
+| [adhd](./skills/adhd) | ADHD-friendly output: action first, numbered steps, restate state, no fluff | Reasoning |
+| [just-stop](./skills/just-stop) | Stops "just one more" optional tweaks after the goal is already met | Reasoning |
+| [subagent](./skills/subagent) | Ground rules for effective subagents: scope, escalate, structured handoff | Agents |
+| [mini-loop](./skills/mini-loop) | Autonomous build-verify-fix loop until Definition of Done passes | Agents |
+| [model-bench](./skills/model-bench) | 3-leg launch-day eval: trap questions, orchestration with a planted failure, brownfield build | Agents |
+| [create-issue](./skills/create-issue) | Crafts actionable GitHub issues from bug reports and feature requests | Workflow |
 | [vibe-audit](./skills/vibe-audit) | 20-point code quality audit for codebases that were shipped fast and need hardening | Code Quality |
 | [code-review](./skills/code-review) | Structured 3-phase code review: intent, issues by severity, and adversarial stress-testing | Code Quality |
 | [prisma](./skills/prisma) | TypeScript and Prisma ORM best practices for schema design, type-safe queries, migrations, and error handling | Backend |
