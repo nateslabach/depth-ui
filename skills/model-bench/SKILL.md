@@ -16,9 +16,11 @@ Each leg scores 0-5. Total out of 15.
 
 ## Contamination rules (read first)
 
-- The model under test must NEVER see the contents of this skill folder. If it reads the answer key or learns about the planted trap, that leg is void.
-- This skill runs in a **proctor session** (Nate plus a model he already trusts) opened on this repo. The model under test runs in separate, fresh sessions and only ever receives the paste-ready prompts.
-- **Never use this repo as the target repo.** The skill (and answer key) live here; target-repo sessions must not be able to see them.
+- The model under test must NEVER see gold answers or learn about the planted trap. If it does, that leg is void.
+- **Private answer key** lives outside this repo: `~/proctor/model-bench/answer-key.md` (or `grading/answer-key.local.md`, gitignored). Public stub: [grading/answer-key.md](grading/answer-key.md). Legs 2–3 checklists: [grading/rubrics.md](grading/rubrics.md).
+- This skill runs in a **proctor session** (Nate plus a model he already trusts). The model under test only ever receives the task prompts — never this skill folder, never the private key.
+- **Never use this repo as the target repo** for legs 2–3.
+- **Leg 1 isolation:** launch each question in a context with **no access to this workspace** (no tools / empty workspace / chat-only). If the target model can `Read` files here, the leg is void.
 - One fresh session per leg. No custom system prompts or rules that would coach the model.
 
 ## Workflow
@@ -26,7 +28,7 @@ Each leg scores 0-5. Total out of 15.
 ```
 Progress:
 - [ ] Setup: pick target model, pick target repo, verify leg 2 plant
-- [ ] Leg 1: 5 questions in fresh chats (or subagent fast path), record final answers
+- [ ] Leg 1: proctor launches 5 parallel subagents (one question each), record final answers
 - [ ] Leg 2: paste orchestration task into a fresh agent session on the target repo
 - [ ] Leg 3: paste brownfield spec into a fresh agent session, branch per model
 - [ ] Grade all 3 legs using grading/answer-key.md
@@ -39,16 +41,21 @@ Progress:
 - When comparing models, use identical prompts, identical repo state, and a fresh branch per model (`vibe/<model-name>`).
 
 **Run the legs**
-- Leg 1 prompts: [tasks/leg-1.md](tasks/leg-1.md)
+- Leg 1 prompts + proctor protocol: [tasks/leg-1.md](tasks/leg-1.md)
 - Leg 2 task: [tasks/leg-2.md](tasks/leg-2.md)
 - Leg 3 spec template: [tasks/leg-3.md](tasks/leg-3.md)
 
-**Leg 1 subagent fast path (optional)**
-If the target model is available as a subagent model slug, the proctor session can run leg 1 itself: launch 5 parallel subagents, each with the target model, each receiving exactly one question verbatim and nothing else, and record each final answer. Do not use subagents for legs 2-3 — they run in the current workspace, which is this repo, and the isolation isn't clean. If the target model has no subagent slug (common on launch day), run leg 1 manually in fresh chats.
+**Leg 1 (proctor-driven)**
+The proctor AI runs leg 1. Do not make the human paste questions.
+Launch 5 parallel subagents with the target model slug, each receiving exactly one fenced question from `tasks/leg-1.md` and nothing else. Record final answers only.
+**Isolation:** those subagents must not be able to read this repo (no tools, or empty/disposable workspace). Same-workspace leg 1 = void.
+If the target model has no subagent slug (common on launch day), use five fresh chats the same way — still proctor-driven, not human paste.
+Do **not** use subagents for legs 2–3 in this workspace. Those legs run in separate sessions on the target repo.
 
 **Grade**
-- Rubrics and answer key: [grading/answer-key.md](grading/answer-key.md)
-- Only open the answer key after all legs have been run, and never in a session where the target model is active.
+- Leg 1 gold: private key at `~/proctor/model-bench/answer-key.md` (see [grading/answer-key.md](grading/answer-key.md) stub)
+- Legs 2–3: [grading/rubrics.md](grading/rubrics.md)
+- Only open the private key after all legs have been run, and never in a session where the target model is active.
 
 ## Results
 
