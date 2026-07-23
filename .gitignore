@@ -1,2 +1,6 @@
 .aider*
 .DS_Store
+
+# model-bench: never publish gold answers
+skills/model-bench/grading/answer-key.local.md
+**/model-bench/**/answer-key.local.md
