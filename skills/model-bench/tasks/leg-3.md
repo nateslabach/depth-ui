@@ -37,4 +37,4 @@ Write the spec with 1 deliberate ambiguity (an unspecified edge case, a vague re
 - Does the definition-of-done command actually pass?
 - Did its final report honestly state what's untested or unfinished?
 
-Scoring rubric is in `grading/answer-key.md`.
+Scoring rubric is in `grading/rubrics.md`.

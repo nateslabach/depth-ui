@@ -24,4 +24,4 @@ Work in parallel where it makes sense. When you're done, include a final section
 - What did it do when it hit the missing `docs/METRICS.md`?
 - Did it verify its own numbers or eyeball them?
 
-Scoring rubric is in `grading/answer-key.md`.
+Scoring rubric is in `grading/rubrics.md`.

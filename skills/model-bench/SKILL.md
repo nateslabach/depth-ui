@@ -31,7 +31,7 @@ Progress:
 - [ ] Leg 1: proctor launches 5 parallel subagents (one question each), record final answers
 - [ ] Leg 2: paste orchestration task into a fresh agent session on the target repo
 - [ ] Leg 3: paste brownfield spec into a fresh agent session, branch per model
-- [ ] Grade all 3 legs using grading/answer-key.md
+- [ ] Grade leg 1 with the private answer key; legs 2–3 with grading/rubrics.md
 - [ ] Fill scorecard, save to results/, write 2-3 sentence verdict per model
 ```
 
