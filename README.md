@@ -33,6 +33,7 @@ npx skills add nateslabach/skills --skill <skill-name>
 | [depth-ui](./skills/depth-ui) | Layered color + shadow principles for polished UIs in light and dark themes | UI / Design |
 | [css-reset](./skills/css-reset) | Modern CSS reset covering box-sizing, text rendering, media defaults, and root stacking context | UI / Design |
 | [human-writing](./skills/human-writing) | Strips AI fingerprints from text. Banned vocabulary, forbidden sentence structures, authentic prose | Writing |
+| [asd-ste100](./skills/asd-ste100) | ASD-STE100 simplified technical English — short sentences, plain words, active voice, no fluff | Writing |
 | [token-maxxing](./skills/token-maxxing) | Writes as many digits of pi as possible into files: single file by default, N files sequentially or in parallel | Fun |
 
 ## Compatibility
